@@ -1,4 +1,3 @@
-console.log('test')
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 console.log(hamburgerMenu)
 const navi = document.getElementById("navi");
