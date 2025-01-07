@@ -722,10 +722,6 @@ li {
     padding: 40px 0;
   }
 
-  #reason .slide {
-    width: calc(100% - 16px);
-  }
-
   #reason .slide .title {
     font-size: 1.5rem;
   }
