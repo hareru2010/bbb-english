@@ -473,6 +473,7 @@ li {
   border-left: 15px solid #e9f1fb;
 }
 
+/* kasuya修正② */
 /* #voice .inview-balloon {
   animation: inview-balloon 2s ease-out 3s 1 forwards;
 } */
@@ -645,35 +646,37 @@ li {
   }
 
   /* ハンバーガ―メニュー */
-  .hamburger {
+  .hamburger-menu {
     width: 75px;
     height: 75px;
   }
 
-  .hamburger span {
+  .hamburger-menu span {
     width: 35px;
     left: 21px;
   }
 
-  .hamburger span:nth-child(1) {
+  .hamburger-menu span:nth-child(1) {
     top: 26px;
   }
 
-  .hamburger span:nth-child(2) {
+  .hamburger-menu span:nth-child(2) {
     top: 37px;
   }
 
-  .hamburger span:nth-child(3) {
+  .hamburger-menu span:nth-child(3) {
     top: 48px;
   }
 
-  .hamburger.active span:nth-child(1) {
+  .hamburger-menu.active span:nth-child(1) {
     top: 37px;
     left: 21px;
   }
 
-  .hamburger.active span:nth-child(2),
-  .hamburger.active span:nth-child(3) {
+  .hamburger-menu.active span:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger-menu.active span:nth-child(3) {
     top: 37px;
   }
 
@@ -723,6 +726,10 @@ li {
     padding: 40px 0;
   }
 
+  #reason .slide {
+    width: calc(100% - 16px);
+  }
+
   #reason .slide .title {
     font-size: 1.5rem;
   }
@@ -738,9 +745,19 @@ li {
     }
   }
 
+  #reason .inview-slide-right {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transform: translateX(90%);
+  }
+
+  #reason .slide-right {
+    animation: slide-right 2s ease-out forwards;
+  }
+
   @keyframes slide-right {
     0% {
-      transform: translateX(100%);
+      transform: translateX(90%);
     }
 
     100% {
@@ -857,3 +874,4 @@ li {
     margin-bottom: 30px;
   }
 }
+
